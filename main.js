@@ -8,7 +8,46 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
-//NUMBER 
+//NUMBER 5
+
+/*
+Coding in function findSimilarity. function accept two parameters: str, a sentence contains some words, 
+separated by spaces; word, a sample word.
+
+Your task is to keep the words that are similar to the sample word, and to remove the other words.
+
+The similarity is defined as: the same length as the sample; the letter at the beginning and the 
+end of word are same as the sample too.
+
+If there are no similar words in the sentence, should return an empty string.
+
+Examples
+findSimilarity("bag dog dig dot doog dogs","dog") should return "dog dig"
+findSimilarity("bag dog dig dot doog dogs","dig") should return "dog dig"
+findSimilarity("bag dog dig dot doog dogs","dot") should return "dot"
+findSimilarity("bag dog dig dot doog dogs","god") should return ""
+Hint: Use filter() will make your work easier; If you don't know how to solve the kata, please refer to the examples of lesson.
+*/                       
+
+//MY SOLUTION
+const createPattern = s => {
+  let p = s.replace(/./g,".").split("")
+  p[0] = s[0]
+  p[s.length-1] = s[s.length-1]
+  p.push("$")
+  p.unshift("^")
+  return p.join("")
+}
+
+const findSimilarity = (str,word) => {
+  let re = new RegExp(createPattern(word))
+  return str.split(/\s/).filter(x => re.test(x)).join(" ")
+}
+Best Practices1Clever0
+ 0ForkCompare with your solutionLink
+
+
+//NUMBER 4
 
 /*
 We need a simple function that determines if a plural is needed or not. It should take a number, 
