@@ -8,6 +8,31 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 8
+
+/*
+You will be given an array and a limit value. You must check that all values in the array are 
+below or equal to the limit value. If they are, return true. Else, return false.
+
+You can assume all values in the array are numbers.
+*/                       
+
+//MY SOLUTION
+function smallEnough(a, limit){
+  let overLimit = []
+  a.forEach ((number)=>{
+    if (number > limit) {
+      overLimit.push(number)
+    }
+  })
+    if (overLimit.length > 0) {
+      return false
+    }
+    else {
+      return true
+    }
+  }
+
 //NUMBER  7
 
 /*
