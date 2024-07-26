@@ -9,6 +9,69 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 12
+
+/*
+Complete the method/function so that it converts dash/underscore delimited words into camel casing.
+ The first word within the output should be capitalized only if the original word was capitalized 
+ (known as Upper Camel Case, also often referred to as Pascal case). The next words should be always capitalized.
+
+Examples
+"the-stealth-warrior" gets converted to "theStealthWarrior"
+
+"The_Stealth_Warrior" gets converted to "TheStealthWarrior"
+
+"The_Stealth-Warrior" gets converted to "TheStealthWarrior"
+*/                       
+
+//MY SOLUTION
+function toCamelCase(str){ 
+  let arr = str.split('');
+  for(i = 0; i < arr.length; i++){
+    let letter = arr[i];
+    if(letter == '_' || letter == '-') {
+      arr[i + 1] = arr[i + 1].toUpperCase();
+      arr[i] = '';
+    } 
+  }
+  return arr.join('');
+}
+
+//NUMBER 11
+
+/*
+In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all 
+positive integers less than or equal to n. For example: 5! = 5 * 4 * 3 * 2 * 1 = 120. By convention 
+the value of 0! is 1.
+
+Write a function to calculate factorial for a given input. If input is below 0 or above 12 throw an 
+exception of type ArgumentOutOfRangeException (C#) or IllegalArgumentException (Java) or RangeException
+ (PHP) or throw a 
+RangeError (JavaScript) or ValueError (Python) or return -1 (C).
+*/                       
+
+//MY SOLUTION
+function factorial(n)
+{
+  let num = 1
+  let diff = n
+  if (n > 12 || n < 0) {
+    throw new RangeError("The argument must be between 12 and 0.")
+  }
+  else {
+  while (diff > 0) {
+    num = num * diff
+    diff = diff - 1
+    
+  }
+    }
+  if (num == 0) {
+    return 1
+  } else {
+  return num
+    }
+}
+
 
 //NUMBER 10
 
