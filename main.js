@@ -9,6 +9,28 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 15
+
+/*
+Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
+
+Examples (Input -> Output):
+* "String"      -> "SSttrriinngg"
+* "Hello World" -> "HHeelllloo  WWoorrlldd"
+* "1234!_ "     -> "11223344!!__  "
+*/                       
+
+//MY SOLUTION
+function doubleChar(str) {
+  // Your code here
+  let finals = []
+  let newStr = str.split('')
+  newStr.map((letter) =>{
+    finals.push(letter + letter)
+  })
+  return finals.join('')
+}
+
 //NUMBER 14
 
 /*
