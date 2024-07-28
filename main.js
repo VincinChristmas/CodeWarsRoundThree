@@ -10,6 +10,29 @@
 /*********THE ABOVE IS A TEMPLATE*************** */
 
 
+/*
+Complete the solution so that the function will break up camel casing, using a space between words.
+
+//NUMBER 19
+
+Example
+"camelCasing"  =>  "camel Casing"
+"identifier"   =>  "identifier"
+""             =>  ""
+*/
+
+function solution(string) {
+  let splitString = string.split('')
+  
+  for (let i = 0; i < splitString.length; i++) {
+      if (splitString[i] === splitString[i].toUpperCase()) {
+        splitString[i] = ` ${splitString[i]}`
+      }
+    }
+  return splitString.join('')
+  }
+
+
 //NUMBER 18
 
 /*
