@@ -9,11 +9,25 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 20
 
 /*
-Complete the solution so that the function will break up camel casing, using a space between words.
+Determine if the sex of the offspring will be male or female based on the X or Y chromosome present in the male's sperm.
+
+If the sperm contains the X chromosome, return "Congratulations! You're going to have a daughter."; If the sperm contains the 
+Y chromosome, 
+return "Congratulations! You're going to have a son.";
+*/                       
+
+//MY SOLUTION
+function chromosomeCheck(sperm) {
+  return (sperm === 'XY') ? "Congratulations! You're going to have a son." : "Congratulations! You're going to have a daughter."
+}
+
 
 //NUMBER 19
+/*
+Complete the solution so that the function will break up camel casing, using a space between words.
 
 Example
 "camelCasing"  =>  "camel Casing"
@@ -21,6 +35,7 @@ Example
 ""             =>  ""
 */
 
+//My SOULUTION
 function solution(string) {
   let splitString = string.split('')
   
