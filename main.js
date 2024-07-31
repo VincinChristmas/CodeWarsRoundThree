@@ -9,6 +9,95 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 26
+
+/*
+Build a pyramid-shaped tower, as an array/list of strings, given a positive integer
+ number of floors. A tower block is represented with "*" character.
+
+For example, a tower with 3 floors looks like this:
+
+[
+  "  *  ",
+  " *** ", 
+  "*****"
+]
+And a tower with 6 floors looks like this:
+
+[
+  "     *     ", 
+  "    ***    ", 
+  "   *****   ", 
+  "  *******  ", 
+  " ********* ", 
+  "***********"
+]
+
+*/                       
+
+//MY SOLUTION
+function towerBuilder(nFloors) {
+  let newArray = [];
+  for (let i = 1; i <= nFloors; i++) {
+    let stars = '*'.repeat(2 * i - 1);
+    let spaces =' '.repeat(nFloors - i);
+    newArray.push(spaces + stars + spaces);
+  }
+  return newArray;
+}
+
+
+//NUMBER 25
+
+/*
+Coding in function threeInOne. function accept 1 parameters arr, it's a 1D number array. 
+Your task is to merge each of the 3 elements into 1 elements (sum value) and return the result.
+
+Note1: You should not modify the original array.
+
+Note2: Because this is a beginner Kata, and due to the author's mercy ;-), so you do not have 
+to verify the validity of the parameter, and do not worry about the number of elements of the array 
+is not a multiple of 3.
+
+Example:
+
+threeInOne( [1,2,3]) should return [6]
+threeInOne( [1,2,3,4,5,6]) should return [6,15]
+threeInOne( [1,2,3,4,5,6,7,8,9]) should return [6,15,24]
+threeInOne( [1,3,5,2,4,6,7,7,7]) should return [9,12,21]
+*/                       
+
+//MY SOLUTION
+function threeInOne(arr){
+  //coding here...
+  let copyArr = arr.slice()
+  let reception = []
+  for(let i = 0; i < copyArr.length; i+=3) {
+    reception.push(copyArr[i] + copyArr[i + 1] + copyArr[i+2])
+    
+}
+  return reception
+  }
+
+
+//NUMBER 24
+
+/*
+Complete the function which converts a binary number (given as a string) to a decimal number.
+*/                       
+
+//MY SOLUTION
+function binToDec(bin) {
+  let sum = 0;
+  let newBin = bin.split('');
+  for (let i = 0; i < newBin.length; i++) {
+   
+    sum += Number(newBin[i]) * Math.pow(2, newBin.length - 1 - i);
+  }
+  return sum;
+}
+
+
 //NUMBER 23
 
 /*
