@@ -9,6 +9,61 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 23
+
+/*
+As a part of this Kata, you need to create a function that when provided with a triplet, 
+returns the index of the numerical element that lies between the other two elements.
+
+The input to the function will be an array of three distinct numbers (Haskell: a tuple).
+
+For example:
+
+gimme([2, 3, 1]) => 0
+2 is the number that fits between 1 and 3 and the index of 2 in the input array is 0.
+
+Another example (just to make sure it is clear):
+
+gimme([5, 10, 14]) => 1
+10 is the number that fits between 5 and 14 and the index of 10 in the input array is 1.
+
+*/                       
+
+//MY SOLUTION
+function gimme (triplet) {
+  let number = 0
+  let num1 = Math.max(...triplet)
+  let num2 = Math.min(...triplet)
+  for (let i = 0; i < triplet.length; i++) {
+    if (triplet[i] < num1 && triplet[i] > num2) {
+       number = number + triplet.indexOf(triplet[i])
+    }
+  }
+    return number
+  }
+
+//NUMBER 22
+
+/*
+Given a non-negative integer n, write a function to_binary/ToBinary which returns that number in a binary format.
+
+to_binary(1)   should return 1 
+to_binary(5)   should return 101 
+to_binary(11)  should return 1011 
+Example:
+
+toBinary(1)   should return 1 
+toBinary(5)   should return 101 
+toBinary(11)  should return 1011 
+
+*/                       
+
+//MY SOLUTION
+function toBinary(n){
+  n = n.toString(2)
+  return Number(n)
+}
+
 
 
 //NUMBER 21
