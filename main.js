@@ -9,6 +9,18 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 30
+
+/*
+Find the total sum of internal angles (in degrees) in an n-sided simple polygon. N will be greater than 2.
+*/                       
+
+//MY SOLUTION
+function angle(n) {
+  //code here
+  return (n-2) * 180
+}
+
 //NUMBER 29
 
 /*
