@@ -9,6 +9,35 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 31
+
+/*
+Write Number in Expanded Form
+You will be given a number and you will need to return it as a string in Expanded Form. For example:
+
+expandedForm(12); // Should return '10 + 2'
+expandedForm(42); // Should return '40 + 2'
+expandedForm(70304); // Should return '70000 + 300 + 4'
+*/                       
+
+//MY SOLUTION
+function expandedForm(num) {
+  // Your code here
+  let numberCollection = []
+  let newNum = num.toString().split('')
+  for(let i = 0 ; i < newNum.length; i++ ){
+    for(let y = newNum.length - i; y > 1; y--){
+         newNum[i] += '0'; 
+      }
+  }
+  newNum.forEach((number)=>{
+    if (number[0] !== '0') {
+      numberCollection.push(number)
+    }
+  })
+  return numberCollection.join(' + ')
+}
+
 //NUMBER 30
 
 /*
