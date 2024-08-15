@@ -9,6 +9,21 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 37
+
+/*
+Determine the total number of digits in the integer (n>=0) given as input to the function.
+\ For example, 9 is a single digit, 66 has 2 digits and 128685 has 6 digits. Be careful to avoid overflows/underflows.
+
+All inputs will be valid.
+*/                       
+
+//MY SOLUTION
+function digits(n) {
+  let number = n.toString().split('')
+  return number.length
+}
+
 //NUMBER 36
 
 /*
