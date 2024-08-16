@@ -9,6 +9,20 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+
+//NUMBER 38
+
+/*
+Complete the function which converts hex number (given as a string) to a decimal number.
+
+
+*/                       
+
+//MY SOLUTION
+function hexToDec(hexString){
+  return parseInt(hexString, 16)
+}
+
 //NUMBER 37
 
 /*
