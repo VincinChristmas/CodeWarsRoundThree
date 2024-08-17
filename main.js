@@ -9,6 +9,18 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 39
+
+/*
+Create a function that accepts a list/array and a number n, and returns a list/array of the first n elements from the list/array.
+*/                       
+
+//MY SOLUTION
+
+function take(arr, n) {
+  // Your code here
+  return arr.slice(0,n)
+}
 
 //NUMBER 38
 
