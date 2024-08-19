@@ -9,6 +9,26 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+
+//NUMBER 41
+
+/*
+When provided with a letter, return its position in the alphabet.
+
+Input :: "a"
+
+Ouput :: "Position of alphabet: 1"
+*/                       
+
+//MY SOLUTION
+function position(letter){
+  var chars=[];
+  for (var i=97;i<123;i++){
+    chars.push(String.fromCharCode(i));
+  }
+    return `Position of alphabet: ${chars.indexOf(letter) + 1}`
+  }
+
 //NUMBER 40
 
 /*
