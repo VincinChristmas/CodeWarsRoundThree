@@ -9,6 +9,55 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 43
+
+/*
+Please refer to two example above and write your first JS function.
+
+mission 1:
+
+use keyword function to define your function, function name should be helloWorld(don't forget the () and {})
+
+mission 2:
+
+use keyword var (or let or const) to define a variable str, value of str should be a string: "Hello World!"(don't forget the =).
+
+mission 3:
+
+type the console.log() in the next line (don't forget to put the str in the parentheses).
+
+When you have finished the work, click "Run Tests" to see if your code is working properly.
+
+In the end, click "Submit" to submit your code pass this kata.
+*/                       
+
+//MY SOLUTION
+function helloWorld() {
+  var str = "Hello World!"
+  console.log(str)
+}
+
+//NUMBER 42
+
+/*
+Your boss decided to save money by purchasing some cut-rate optical character recognition software for 
+scanning in the text of old novels to your database. At first it seems to capture words okay, but you quickly notice that it 
+throws in a lot of numbers at random places in the text.
+
+Examples (input -> output)
+'! !'                 -> '! !'
+'123456789'           -> ''
+'This looks5 grea8t!' -> 'This looks great!'
+Your harried co-workers are looking to you for a solution to take this garbled text 
+and remove all of the numbers. Your program will take in a string and clean out all numeric 
+characters, and return a string with spacing and special characters ~#$%^&!@*():;"'.,? all intact.
+*/                       
+
+//MY SOLUTION
+function stringClean(s){
+  return s.replace(/\d+/g, '');
+}
+
 
 //NUMBER 41
 
