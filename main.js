@@ -8,6 +8,40 @@
 
 
 /*********THE ABOVE IS A TEMPLATE*************** */
+
+
+//NUMBER 48
+
+/*
+Write a method (or function, depending on the language) that converts a 
+string to camelCase, that is, all words must have their first letter capitalized and spaces must be removed.
+
+Examples (input --> output):
+"hello case" --> "HelloCase"
+"camel case word" --> "CamelCaseWord"
+Don't forget to rate this kata! Thanks :)
+*/                       
+
+//MY SOLUTION
+
+String.prototype.camelCase=function(){
+  let wordCollection = []
+  let finalCollection = []
+  if (this.length === 0) {
+    return '';
+  }
+   let words = this.split(' ')
+   words.forEach((word)=> {
+     wordCollection.push(word.toUpperCase())
+   })
+   wordCollection.forEach((newWord) => {
+     let partOne = newWord[0] + newWord.slice(1).toLowerCase()
+     finalCollection.push(partOne)
+   })
+    
+return finalCollection.join('')
+}
+
 //NUMBER 47
 
 /*
