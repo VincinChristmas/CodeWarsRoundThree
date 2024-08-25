@@ -9,6 +9,22 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 49
+
+/*
+Write a function that returns the total surface area and volume of a box as an array: [area, volume]
+*/                       
+
+//MY SOLUTION
+function getSize(width, height, depth) {
+  
+  let area = 2 * ((width * height) + (width * depth) + (height * depth))
+  let volume =  width * height * depth;
+  
+  let mathArr = [area, volume]
+  return mathArr
+}
+
 
 //NUMBER 48
 
