@@ -9,6 +9,34 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 52
+
+/*
+Your task is to remove all duplicate words from a string, leaving only single (first) words entries.
+
+Example:
+
+Input:
+
+'alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'
+
+Output:
+
+'alpha beta gamma delta'
+*/                       
+
+//MY SOLUTION
+function removeDuplicateWords (s) {
+  let collectionCan = []
+  let wordCollection =  s.split(' ')
+  wordCollection.forEach((word)=> {
+    if (collectionCan.includes(word) == false) {
+    collectionCan.push(word)
+      } 
+  })
+  return collectionCan.join(' ')
+}
+
 //NUMBER 51
 
 /*
