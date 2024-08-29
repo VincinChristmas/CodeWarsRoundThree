@@ -9,6 +9,22 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 54
+
+/*
+Write a function called sortGiftCode/sort_gift_code/SortGiftCode that accepts a string containing
+ up to 26 unique alphabetical characters, 
+and returns a string containing the same characters in alphabetical order.
+*/                       
+
+//MY SOLUTION
+
+
+function sortGiftCode(code) {
+  let arrCode = code.split('')
+  return arrCode.sort().join('')
+}
+
 //NUMBER 53
 
 /*
