@@ -9,6 +9,18 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 55
+
+/*
+Create a method that accepts a list and an item, and returns true if 
+the item belongs to the list, otherwise false.
+*/                       
+
+//MY SOLUTION
+function include(arr, item){
+  return arr.includes(item)
+}
+
 //NUMBER 54
 
 /*
