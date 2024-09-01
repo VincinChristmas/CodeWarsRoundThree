@@ -8,6 +8,61 @@
 
 
 /*********THE ABOVE IS A TEMPLATE*************** */
+//NUMBER 57
+
+/*
+Write a function that will check if two given characters are the same case.
+
+If either of the characters is not a letter, return -1
+If both characters are the same case, return 1
+If both characters are letters, but not the same case, return 0
+Examples
+'a' and 'g' returns 1
+
+'A' and 'C' returns 1
+
+'b' and 'G' returns 0
+
+'B' and 'g' returns 0
+
+'0' and '?' returns -1
+
+*/                       
+
+//MY SOLUTION
+function sameCase(a, b){
+  var chars = []
+  var bigChars = []
+  for (var i = 97; i < 123; i++) {
+    chars.push(String.fromCharCode(i))
+    bigChars.push(String.fromCharCode(i).toUpperCase())
+  }
+    if (!chars.includes(a.toLowerCase()) && !bigChars.includes(a)) {
+    return -1
+  }
+  
+  else if (!chars.includes(b.toLowerCase()) && !bigChars.includes(b)) {
+    return -1
+  }
+  
+  else if (chars.includes(a) && chars.includes(b)) {
+    return 1
+  }
+  else if (bigChars.includes(a) && bigChars.includes(b)) {
+    return 1
+  }
+  else if (chars.includes(a) && chars.includes(b) == false) {
+    return 0
+  }
+  else if (bigChars.includes(a) && bigChars.includes(b) == false) {
+    return 0
+  }
+ 
+  else {
+    return -1
+  }
+  
+}
 
 //NUMBER 56
 
