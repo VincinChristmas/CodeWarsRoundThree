@@ -9,6 +9,57 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 60
+
+/*
+Find the sum of all multiples of n below m
+
+Keep in Mind
+n and m are natural numbers (positive integers)
+m is excluded from the multiples
+Examples
+sumMul(2, 9)   ==> 2 + 4 + 6 + 8 = 20
+sumMul(3, 13)  ==> 3 + 6 + 9 + 12 = 30
+sumMul(4, 123) ==> 4 + 8 + 12 + ... = 1860
+sumMul(4, -7)  ==> "INVALID"
+
+*/                       
+
+//MY SOLUTION
+
+function sumMul(n,m){
+  let collection = []
+  let newCollection = []
+  
+  let sum = 0
+  let newSum = 0
+if (n === 0 && m === 0) {
+  return 'INVALID'
+} 
+  else if (n < 0 || m < 0) {
+    return 'INVALID'
+  }
+  else {
+    
+    while (sum < m) {
+      sum = sum + 1
+      collection.push(sum)
+    }
+    collection.forEach((number)=>{
+      newCollection.push(n * number)
+      
+    })
+  }
+  for (let i = 0; i < newCollection.length; i++) {
+  
+    if (newCollection[i] < m) {
+      newSum = newSum + newCollection[i]
+    }
+    
+  }
+  return newSum
+}
+
 //NUMBER 59
 
 /*
