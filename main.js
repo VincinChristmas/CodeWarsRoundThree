@@ -9,6 +9,34 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 64
+
+/*
+Your car is old, it breaks easily. The shock absorbers are gone and you think it can handle about 15 more bumps before it dies totally.
+
+Unfortunately for you, your drive is very bumpy! Given a string showing either flat road (_) or bumps (n). If you are able to reach home safely
+ by encountering 15 bumps or less, return Woohoo!, otherwise return Car Dead
+*/                       
+
+//MY SOLUTION
+
+
+function bump(x){
+  let str = x.split('')
+  let sum = 0
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] == 'n') {
+      sum = sum + 1
+    }
+  }
+    if (sum > 15) {
+      return "Car Dead"
+    } else {
+      return "Woohoo!"
+    }
+  
+  }
+
 
 //NUMBER 63
 
