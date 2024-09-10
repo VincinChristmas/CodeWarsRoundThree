@@ -8,6 +8,27 @@
 
 
 /*********THE ABOVE IS A TEMPLATE*************** */
+//NUMBER 66
+
+/*
+Write a small function that returns the values of an array that are not odd.
+
+All values in the array will be integers. Return the good values in the order they are given.
+
+ArraysFundamentals
+*/                       
+
+//MY SOLUTION
+function noOdds( values ){
+  // Return all non-odd values
+  let collection = []
+  for (let i = 0; i < values.length; i++) {
+    if(values[i] % 2 == 0) {
+      collection.push(values[i])
+    }
+  }
+  return collection
+}
 
 
 //NUMBER 65 
