@@ -22,8 +22,6 @@ String.prototype.digit = function() {
 };
 
 
-
-
 //NUMBER 75
 
 /*
