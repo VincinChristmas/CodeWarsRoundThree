@@ -9,6 +9,20 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 76
+
+/*
+Implement String#digit? (in Java StringUtils.isDigit(String)), which should return true if given object is a digit (0-9), false otherwise.
+*/                       
+
+//MY SOLUTION
+String.prototype.digit = function() {
+  const regex = /^\d$/;
+  return regex.test(this.toString());
+};
+
+
+
 
 //NUMBER 75
 
