@@ -10,6 +10,19 @@
 /*********THE ABOVE IS A TEMPLATE*************** */
 
 
+//NUMBER 78
+
+/*
+Get ASCII value of a character.
+
+For the ASCII table you can refer to http://www.asciitable.com/
+*/                       
+
+//MY SOLUTION
+function getASCII(c){
+  return c.charCodeAt()
+}
+
 //NUMBER 77
 
 /*
