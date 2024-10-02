@@ -8,6 +8,14 @@
 
 
 /*********THE ABOVE IS A TEMPLATE*************** */
+//NUMBER 84
+
+/*
+
+*/                       
+
+//MY SOLUTION
+
 
 //NUMBER 83
 
@@ -39,25 +47,26 @@ if floor<=1, Mr. despair is safe, return ""
 */                       
 
 //MY SOLUTION
-function sc(floor){
-  switch(floor) {
-      case floor == 6:
-      return "Aa~ Aa~ Aa~ Aa~ Aa~ Pa! Aa!";
-      break;
-      
-      case floor == 7:
-      return "Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Pa!";
-      break;
-      
-      case floor == 10:
-      return "Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Pa!";
-      break;
-      
-      case floor <= 1:
-      return ""
-      break;
-  }
 
+
+function sc(floor){
+  let collection = []
+  let firstBlock
+  let sum = 0
+  while (sum < floor) {
+    sum = sum + 1
+    collection.push("Aa~ ")
+  }
+  if (floor <= 1) {
+    return ""
+  }
+  else if (floor <= 6) {
+    firstBlock = collection.slice(0, collection.length-1).join('') + 'Pa! Aa!'
+  }
+  else if (floor > 6) {
+    firstBlock = collection.slice(0, collection.length-1).join('') + 'Pa!'
+  }
+  return firstBlock
 }
 
 
