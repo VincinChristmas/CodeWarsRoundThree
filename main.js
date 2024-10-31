@@ -10,6 +10,25 @@
 
 
 /*********THE ABOVE IS A TEMPLATE*************** */
+//NUMBER 100
+
+/*
+Functional closures can get overly attached. Set them straight!
+
+Why doesn't greetAbe() actually greet Abe?
+
+*/                       
+
+//MY SOLUTION
+const abeName = 'Abe';
+
+
+const greetAbe = () => 'Hello, ' + abeName + '!';
+
+
+const benName = 'Ben';
+
+const greetBen = () => 'Hello, ' + benName + '!';
 
 //NUMBER 99
 
